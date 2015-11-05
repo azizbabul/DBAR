@@ -1,0 +1,18 @@
+<h1>Sscs#new</h1>
+<p>Find me in app/views/sscs/new.html.erb</p>
+<%=form_for @ssc,:url=>{:action=> 'create'} do |s|%>
+
+  <%= s.label :membership_id %>
+<%= s.text_field :membership_id %> <br>
+<%= s.label :result %>
+<%=  s.select(:result,['first','second'] )%><br>
+
+  <%= s.label :year %>
+<%= s.text_field :year %><br>
+
+<%= s.label :board %>
+<%= s.text_field :board %>
+<%= s.label :created_by_id %>
+<%= s.text_field :created_by_id %>
+<%= s.submit %>
+<%end%>

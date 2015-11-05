@@ -1,0 +1,22 @@
+<h1>Sscs#show</h1>
+<p>Find me in app/views/sscs/show.html.erb</p>
+
+<table>
+    <tr style = "background-color:gray ">
+        <td>Member_id</td>
+        <td>Result</td>
+        <td>year</td>
+        <td>board</td>
+         <td>created_by</td>
+    </tr>
+    <tr>    
+<td><%= @ssc.membership_id%></td>
+<td><%= @ssc.result %></td>
+<td><%= @ssc.year %></td>
+<td><%= @ssc.board%></td>
+<td> created_by_id</td>
+    
+    <td>
+<%= link_to 'back',{:action=>'index'} %>
+
+   </td> </tr></table>

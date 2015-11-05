@@ -1,0 +1,26 @@
+<h1>Sscs#index</h1>
+<p>Find me in app/views/sscs/index.html.erb</p>
+<%@ssc.each do |s|%>
+<table width = 500px border = 5px>
+    <tr style = "background-color:goldenrod ">
+        <td>Member_id</td>
+        <td>Result</td>
+        <td>year</td>
+        <td>board</td>
+         <td>created_by</td>
+           <td>actions</td>
+    </tr>
+    <tr style = 'color:blueviolet;'>    
+<td><%= s.membership_id%></td>
+<td><%= s.result %></td>
+<td><%= s.year %></td>
+<td><%= s.board%></td>
+<td> <%=s.created_by_id %></td>
+    
+    <td>
+<%= link_to 'show',{:action=>'show',:id=>s.id} %>
+<%= link_to 'edit',{:action=>'edit',:id=>s.id}%>
+<%= link_to 'destroy',{:action=>'destroy',:id=>s.id}%>
+
+   </td> </tr></table>
+<%end%>

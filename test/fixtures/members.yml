@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  membership_id: 1
+  name: MyString
+  father_name: MyString
+  husband: MyString
+  village: MyString
+  postOffice: MyString
+  thana: MyString
+  district: MyString
+  present_address: MyText
+  district: MyString
+  phone: MyString
+  acknowledgement_name: MyString
+  acknowledgement_relation: MyString
+  date_of_enrollment: MyString
+  roll: 1
+  date_of_past_enrollment: MyString
+  date_of_cancel: MyString
+  cancel_roll: 1
+  status: 1
+  date_of_membership: MyString
+  created_by_id: 1
+  updated_by_id: 1
+
+two:
+  membership_id: 1
+  name: MyString
+  father_name: MyString
+  husband: MyString
+  village: MyString
+  postOffice: MyString
+  thana: MyString
+  district: MyString
+  present_address: MyText
+  district: MyString
+  phone: MyString
+  acknowledgement_name: MyString
+  acknowledgement_relation: MyString
+  date_of_enrollment: MyString
+  roll: 1
+  date_of_past_enrollment: MyString
+  date_of_cancel: MyString
+  cancel_roll: 1
+  status: 1
+  date_of_membership: MyString
+  created_by_id: 1
+  updated_by_id: 1

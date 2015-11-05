@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sr_no: 1
+  name: MyString
+  copy: 1
+  images: MyString
+
+two:
+  sr_no: 1
+  name: MyString
+  copy: 1
+  images: MyString

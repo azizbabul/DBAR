@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBAR</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+   <% if user_signed_in? %>
+  <p>welcome, signed in as <%=current_user.email%></p>
+<%= link_to "logout", destroy_user_session_path ,method: :delete%>
+<%else%>   
+<%= link_to "login",  new_user_session_path %>
+<%end%>
+  <table width = 800px >
+<tr bgcolor = "gray" ><td align="center" colspan = "2"><h2> Samle page </h2></td>
+
+</tr>
+<tr>
+<td>
+<table width =150px height = 300px bgcolor = gray border = '1px' >
+<tr><td style="text-align:center;"> Admin Pannel</td> </br>
+ <tr><td style="text-align:center;text-decoration:none"><a href="#" >Member</a></td></tr>
+ <tr><td align="center"><a href="#" >Library</a></td></tr>
+ <tr><td align="center"><a href="#" >User</a></td></tr>
+ <tr><td align="center"><a href="#" >Account List</a></td></tr>
+<tr><td align="center"><a href="#" >Voter List</a></td></tr>
+</tr>
+</table>
+</td>
+<td>
+<table width =600px height = 400px >
+<tr><td> <%= yield %></td></tr>
+</table>
+</td>
+</tr>
+<table>
+
+<%#= yield %>
+
+</body>
+</html>

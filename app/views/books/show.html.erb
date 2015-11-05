@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sr no:</strong>
+  <%= @book.sr_no %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @book.name %>
+</p>
+
+<p>
+  <strong>Copy:</strong>
+  <%= @book.copy %>
+</p>
+
+<p>
+  <strong>Images:</strong>
+ <%= image_tag @book.images, :width=>50 ,:height=>50 %> 
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
